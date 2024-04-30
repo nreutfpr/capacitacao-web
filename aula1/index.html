@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matricula de Aluno</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.svg" />
+        <ul>
+          <li>Sobre</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="container">
+        <section>
+          <img src="images/Group.svg" />
+        </section>
+        <section>
+          <h1>Porque cada momento de aprendizado conta</h1>
+          <p>
+            Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+            acolhedor, seguro e estimulante
+          </p>
+        </section>
+      </div>
+
+      <h2>Formulário de Matricula</h2>
+      <p>Preencha os dados abaixo para matricular seu filho na Escola</p>
+
+      <form>
+
+        <strong>Informações do adolescente</strong>
+
+        <div>
+          <label for="nomeCompleto">Nome completo</label>
+          <input type="text" name="nomeCompleto" id="nomeCompleto" required/>
+        </div>
+
+        <div>
+          <p>Sexo:</p>
+          <select name="sexo" required>
+            <option>Selecione</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+          </select>
+        </div>
+
+        <strong>Informações do responsável</strong>
+
+        <div>
+          <label for="nomeCompletoResponsavel">Nome Completo do responsável</label>
+          <input type="text" id="nomeCompletoResponsavel" required/>
+        </div>
+
+        <div>
+          <label>Telefone</label>
+          <input type="tel" required/>
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email" required/>
+        </div>
+
+        <strong>Opções de matrícula</strong>
+        <p>Selecione o turno de estudo</p>
+
+        <div>
+          <input type="radio" id="manha" name="turno">
+          <i class="ph ph-cloud-sun"></i>
+          <label for="manha">Manhã</label>
+
+          <input type="radio" id="tarde" name="turno">
+          <i class="ph ph-sun"></i>
+          <label for="tarde">Tarde</label>
+
+          <input type="radio" id="noite" name="turno">
+          <i class="ph ph-moon"></i>
+          <label for="noite">Noite</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="concordo" required>
+          <label for="concordo">Declaro que li e concordo com os <a href="https://www.youtube.com/" target="blank">Termos e Condições</a> e com a Política de Privacidade da escola Sabedoria</label>
+        </div>
+
+        <button type="submit">Concluir Matricula</button>
+      </form>
+    </main>
+  </body>
+</html>
