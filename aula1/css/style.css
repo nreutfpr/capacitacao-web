@@ -25,6 +25,10 @@ header {
 
 */
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 .container {
     width: 100%;
     max-width: 1250px;
@@ -55,9 +59,120 @@ header ul {
     margin-bottom: 40px;
 }
 
-
 .secaoPrincipal .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.secaoPrincipal h1 {
+    font-size: 40px;
+    
+}
+
+.secaoPrincipal h1 span {
+    color: #F67841;
+}
+
+.secaoPrincipal p {
+    color: #57534E;
+}
+
+.secaoPrincipal section {
+    max-width: 500px;
+}
+
+.cabecalhoForm {
+    margin-bottom: 30px;
+}
+
+/* 
+
+form input, form select {
+    display: block;
+    width: 100%;
+}
+
+*/
+
+form input {
+    display: block;
+    width: 100%;
+    border: 1px solid #D6D3D1;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+form select {
+    display: block;
+    width: 100%;
+    border: 1px solid #D6D3D1;
+    border-radius: 8px;
+    padding: 5px 15px;
+    background-color: white;
+}
+
+form input[type="radio"]{
+    display: inline-block;
+    width: auto;
+}
+form label[for="manha"], form label[for="tarde"]{
+    margin-right: 10px;
+}
+
+form input[type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+
+form button {
+    background-color: white;
+    color: #E43A12;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 8px 25px;
+    margin: 0 auto;
+    display: block;
+}
+
+form .container div{
+    margin-bottom: 20px;
+}
+
+footer {
+    border-top: 1px solid #EFF0F6;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+footer .container {
+    display: flex;
+    gap: 40px;
+}
+
+.footerContato ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.footerContato ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footerContato i {
+    color: #F67841;
+}
+
+.copyrightFooter{
+    padding: 30px 0;
+}
+
+.copyrightFooter .container {
+    display: block;
+}
+
+.copyrightFooter p {
+    text-align: center;
 }
